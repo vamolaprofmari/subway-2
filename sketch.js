@@ -81,9 +81,15 @@ function draw() {
 
         gameState === END
 
-        diamondsG.destroy();
-        jwelleryG.destroy()
-        cashG.destroy();
+        cashG.destroyEach();
+        diamondsG.destroyEach();
+        jwelleryG.destroyEach();
+        swordGroup.destroyEach();
+        
+        cashG.setVelocityYEach(0);
+        diamondsG.setVelocityYEach(0);
+        jwelleryG.setVelocityYEach(0);
+        swordGroup.setVelocityYEach(0);
         
 
 //Mude o gameState (estado do jogo) para End
